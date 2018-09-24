@@ -1,0 +1,15 @@
+<%= form_for :equation do |f|%>
+A: <%= f.text_field :a%>
+<br>
+B: <%= f.text_field :b%>
+<br>
+C: <%= f.text_field :c%>
+<br>
+<%= f.submit "Submit"%>
+<%end%>
+
+
+<%if @eq != nil%>
+	<h3><%="Result1: " + String(@eq.result1)%><h3>
+	<h3><%="Result2: " + String(@eq.result2)%><h3>
+<%end%>
